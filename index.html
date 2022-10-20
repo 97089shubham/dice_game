@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main_body">
+    <div class="heading">
+        <h1>GUESS THE DICE</h1>
+    </div>
+
+    <div class="result_till_now">
+        <div>Selected variable : <span id="guessed_number">0</span></div>
+        <div class="image_dice">
+            <img id="dice" src="img/load.gif" alt="" style="padding-right: 122px;">
+        </div>
+        <div>Score : <span id="score">0</span></div>
+    </div>
+
+    <div id="dice_timer" class="text_1">
+        Dice will change in <span id="timer">5</span> seconds
+    </div>
+
+    <div id="text_loading" class="text_2">
+        <h2>Loading ! </h2>
+        <span style="font-size:0.7em;">
+            Game will start in a few seconds!<br>
+            You have to guess a number between 1 and 6
+        </span>
+    </div>
+
+    <div id="trail_id" class="text_1" style="padding-top: 10px;">
+      Game  <span id="trail_num">1</span>
+    </div>
+
+    <div id="result" class="text_3" style="padding-top: 20px;padding-bottom: 20px;">Guess the dice!</div>
+
+    <div>
+      <div class="number">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
